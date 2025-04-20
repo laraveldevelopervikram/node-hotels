@@ -1,5 +1,8 @@
 import mongoose from 'mongoose';
-const mongoURL = 'mongodb://localhost:27017/learning';
+import dotenv from 'dotenv';
+dotenv.config();
+//const mongoURL = 'mongodb://localhost:27017/learning';
+const mongoURL = process.env.DB_URL;
 
 mongoose.connect(mongoURL,{
     // useNewUrlParser: true,
