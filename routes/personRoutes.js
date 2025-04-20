@@ -14,7 +14,7 @@ router.get('/', async(req , res) => {
   }
 })
 
-
+// for testing
 
 router.post('/', async (req , res) => {
   try{
